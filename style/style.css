@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Card front/back poistioning */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.left-align-container {
+  background: url("/images/bg-main-desktop.png");
+  background-size: cover;
+  width: 35%;
+  height: 100vh;
+  position: absolute;
+}
+.right-align-container {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+} /*# sourceMappingURL=style.css.map */
+
+.front-card {
+  position: relative;
+  top: 160px;
+  left: 250px;
+  height: 245px;
+  width: 447px;
+  background: url("/images/bg-card-front.png");
+}
+
+.back-card {
+  position: relative;
+  top: 195px;
+  left: 340px;
+  height: 245px;
+  width: 447px;
+  background: url("/images/bg-card-back.png");
+}
+
+/* /////////////////////////////////////////////// */
+
+/* Card details poistioning and style */
+.card-det {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-brand {
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 45px;
+  width: 80px;
+}
+
+.card-number {
+  margin-top: 90px;
+  font-family: "Space Grotesk";
+  font-size: 25px;
+  line-height: 22px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 5px;
+  margin-left: 25px;
+}
+
+.card-det-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 2px 26px;
+  font-family: "Space Grotesk";
+  color: hsl(270, 3%, 87%);
+}
+
+.card-owner {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.card-expiry {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-right: 17px;
+}
+
+.card-code {
+  position: relative;
+  top: 111px;
+  left: 360px;
+  font-family: "Space Grotesk";
+  color: hsl(270, 3%, 87%);
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* //////////////////////////////////////////// */
+/* Form positioning and style */
+.card-form {
+  margin-right: 340px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Grotesk";
+}
+
+.details-cont-form {
+  display: flex;
+}
+
+.expiry-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.cvc-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: hsl(278, 68%, 11%);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+input {
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  margin-bottom: 20px;
+  height: 44px;
+  border: solid 2px hsl(270, 3%, 87%);
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.card-holder-name {
+  width: 354px;
+}
+
+.card-form-number {
+  width: 354px;
+}
+
+.card-month-form {
+  width: 80.5px;
+}
+
+.card-year-form {
+  width: 80.5px;
+}
+
+.cvc-form {
+  width: 161px;
+}
+
+.form-btn {
+  font-family: "Space Grotesk";
+  height: 44px;
+  font-size: 14px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+/* /////////////////////////////////// */
+/* Fin form styling and poistion */
+
+.fin-cont {
+  margin-right: 340px;
+  font-family: "Space Grotesk";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fin-title {
+  color: hsl(278, 68%, 11%);
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.fin-text {
+  color: hsl(279, 6%, 55%);
+  margin-bottom: 20px;
+}
+
+.fin-btn {
+  font-family: "Space Grotesk";
+  height: 44px;
+  font-size: 14px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 354px;
+}
+
+.hidden {
+  display: none;
+}
