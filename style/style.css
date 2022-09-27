@@ -13,18 +13,18 @@
 .left-align-container {
   background: url("../assets/bg-main-desktop.png");
   background-size: cover;
-  width: 35%;
+  width: 35vw;
   height: 100vh;
   position: absolute;
+  z-index: 10;
 }
 .right-align-container {
   background-color: hsl(0, 0%, 100%);
-  width: 100%;
+  width: 65vw;
   height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: center;
+  position: absolute;
+  margin-left: 462px;
+  z-index: 0;
 } /*# sourceMappingURL=style.css.map */
 
 .front-card {
@@ -103,8 +103,15 @@
 
 /* //////////////////////////////////////////// */
 /* Form positioning and style */
+
+.form-container {
+  position: relative;
+  top: 280px;
+  left: 400px;
+  width: 480px;
+}
+
 .card-form {
-  margin-right: 340px;
   display: flex;
   flex-direction: column;
   font-family: "Space Grotesk";
@@ -172,12 +179,13 @@ input {
   color: white;
   border-radius: 7px;
   cursor: pointer;
+  width: 360px;
 }
 /* /////////////////////////////////// */
 /* Fin form styling and poistion */
 
 .fin-cont {
-  margin-right: 340px;
+  margin-right: 300px;
   font-family: "Space Grotesk";
   display: flex;
   flex-direction: column;
@@ -213,4 +221,11 @@ input {
 
 .hidden {
   display: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 1220px) {
+  .container {
+    flex-direction: column;
+  }
 }
