@@ -32,6 +32,7 @@ continueBtn.addEventListener("click", () => {
   location.reload();
 });
 
+// Here is the issue, it does not take the values in real time using onkeyup nor onkeypress
 //functions to change the values from the cards components while filling the details in the form
 cardNumber.value.onkeyup = function () {
   cardNumberFront.innerText = cardNumber.value;
