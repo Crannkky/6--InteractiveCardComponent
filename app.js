@@ -11,10 +11,8 @@ const cardMonth = document.getElementById("month-form");
 const cardYear = document.getElementById("year-form");
 const cardCVC = document.getElementById("cvc-form");
 
-// Input Value Select
-
 // Card back/front fields select
-const cardNumberFront = document.getElementById("card-num-front");
+const cardNumFront = document.getElementById("card-num-front");
 const cardHolderFront = document.getElementById("card-name");
 const cardMonthFront = document.getElementById("card-month-front");
 const cardYearFront = document.getElementById("card-year-front");
@@ -32,8 +30,31 @@ continueBtn.addEventListener("click", () => {
   location.reload();
 });
 
-// Here is the issue, it does not take the values in real time using onkeyup nor onkeypress
+// credit card input formating - using Cleave.Js library
+var cleaveCC = new Cleave("#number-card", {
+  creditCard: true,
+  onCreditCardTypechange: function (type) {
+    console.log(type);
+  },
+});
+
 //functions to change the values from the cards components while filling the details in the form
-cardNumber.value.onkeyup = function () {
-  cardNumberFront.innerText = cardNumber.value;
-};
+cardNumber.addEventListener("keyup", (e) => {
+  cardNumFront.innerHTML = cardNumber.value;
+});
+
+cardName.addEventListener("keyup", (e) => {
+  cardHolderFront.innerHTML = cardName.value;
+});
+
+cardMonth.addEventListener("keyup", (e) => {
+  cardMonthFront.innerHTML = cardMonth.value;
+});
+
+cardYear.addEventListener("keyup", (e) => {
+  cardYearFront.innerHTML = cardYear.value;
+});
+
+cardCVC.addEventListener("keyup", (e) => {
+  cvcBack.innerHTML = cardCVC.value;
+});
