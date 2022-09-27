@@ -11,7 +11,7 @@
   flex-direction: row;
 }
 .left-align-container {
-  background: url("/assets/bg-main-desktop.png");
+  background: url("../assets/bg-main-desktop.png");
   background-size: cover;
   width: 35%;
   height: 100vh;
@@ -33,7 +33,7 @@
   left: 250px;
   height: 245px;
   width: 447px;
-  background: url("/assets/bg-card-front.png");
+  background: url("../assets/bg-card-front.png");
 }
 
 .back-card {
@@ -42,7 +42,7 @@
   left: 340px;
   height: 245px;
   width: 447px;
-  background: url("/assets/bg-card-back.png");
+  background: url("../assets/bg-card-back.png");
 }
 
 /* /////////////////////////////////////////////// */
