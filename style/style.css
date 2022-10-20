@@ -191,7 +191,7 @@ input {
 /* Fin form styling and poistion */
 
 .fin-cont {
-  margin-right: 300px;
+  margin-left: 55%;
   font-family: "Space Grotesk";
   display: flex;
   flex-direction: column;
@@ -211,6 +211,7 @@ input {
 .fin-text {
   color: hsl(279, 6%, 55%);
   margin-bottom: 20px;
+  width: 240px;
 }
 
 .fin-btn {
